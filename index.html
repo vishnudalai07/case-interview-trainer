@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulting Case Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Landing Page with Options -->
+        <div id="options-screen">
+            <h1>Consulting Case Simulator</h1>
+            <h3>Select a Category</h3>
+            <div class="options">
+                <button class="option-btn" data-option="profitability">Profitability</button>
+                <button class="option-btn" data-option="m&a">M&A</button>
+                <button class="option-btn" data-option="market-entry">Market Entry</button>
+                <button class="option-btn" data-option="abstract">Abstract</button>
+                <button class="option-btn" data-option="pricing-strategy">Pricing Strategy</button>
+            </div>
+        </div>
+
+        <!-- Chat Interface -->
+        <div id="chat-screen" class="hidden">
+            <div id="chat-header">
+                <h2>Consultant-Client Chat</h2>
+                <div class="chat-icons">
+                    <button id="hint-btn">💡 Hint</button>
+                    <button id="answer-btn">📝 Answer</button>
+                    <button id="change-problem-btn">🔄 Change Problem</button>
+                    <button id="clear-chat-btn">❌ Clear Chat</button>
+                </div>
+            </div>
+            <div id="chat-window"></div>
+            <div id="chat-input">
+                <input type="text" id="user-message" placeholder="Type your response...">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
